@@ -24,7 +24,8 @@ class HomeViewController: UIViewController{
         configureNavBar()
         let headerView=HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView=headerView
-        getTrendingMovies()
+        //getTrendingMovies()
+        fetchData()
     }
     private func configureNavBar()
     {
@@ -41,14 +42,27 @@ class HomeViewController: UIViewController{
         super.viewDidLayoutSubviews()
         homeFeedTable.frame=view.bounds
     }
-    private func getTrendingMovies(){
-        APICaller.shared.getTrendingMovies { results in
-            switch results{
-            case .success(let movies):
-                print(movies)
-            case .failure(let error):
-                print(error)
-            }
+    //private func getTrendingMovies()
+    private func  fetchData(){
+//        APICaller.shared.getTrendingMovies { results in
+//            switch results{
+//            case .success(let movies):
+//                print(movies)
+//            case .failure(let error):
+//                print(error)
+           // }
+       // }
+//        APICaller.shared.getTrendingTvs { results in
+//            //
+//        }
+//        APICaller.shared.getUpcomingMovies { _ in
+//            //
+//        }
+//        APICaller.shared.getPopular { _ in
+//            //let results=
+//        }
+        APICaller.shared.getTopRated { _ in
+            
         }
     }
 }
