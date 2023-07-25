@@ -19,9 +19,8 @@
 		F14F34F82A694A04001BF435 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F34F72A694A04001BF435 /* CollectionViewTableViewCell.swift */; };
 		F14F34FA2A69A511001BF435 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F34F92A69A511001BF435 /* HeroHeaderUIView.swift */; };
 		F14F34FC2A6D654F001BF435 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F34FB2A6D654F001BF435 /* APICaller.swift */; };
-		F14F34FE2A6DA349001BF435 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F34FD2A6DA349001BF435 /* Movie.swift */; };
+		F14F34FE2A6DA349001BF435 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F34FD2A6DA349001BF435 /* Title.swift */; };
 		F14F35002A6DD40A001BF435 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F34FF2A6DD40A001BF435 /* Extensions.swift */; };
-		F1F3892F2A6F33BA00D7700D /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3892E2A6F33BA00D7700D /* Tv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +38,8 @@
 		F14F34F72A694A04001BF435 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		F14F34F92A69A511001BF435 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		F14F34FB2A6D654F001BF435 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
-		F14F34FD2A6DA349001BF435 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F14F34FD2A6DA349001BF435 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		F14F34FF2A6DD40A001BF435 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F1F3892E2A6F33BA00D7700D /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +118,7 @@
 		F14F34F42A69472D001BF435 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F14F34FD2A6DA349001BF435 /* Movie.swift */,
-				F1F3892E2A6F33BA00D7700D /* Tv.swift */,
+				F14F34FD2A6DA349001BF435 /* Title.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,8 +219,7 @@
 				F14F35002A6DD40A001BF435 /* Extensions.swift in Sources */,
 				F14F34D82A66E436001BF435 /* SceneDelegate.swift in Sources */,
 				F14F34ED2A6752E0001BF435 /* UpcomingViewController.swift in Sources */,
-				F14F34FE2A6DA349001BF435 /* Movie.swift in Sources */,
-				F1F3892F2A6F33BA00D7700D /* Tv.swift in Sources */,
+				F14F34FE2A6DA349001BF435 /* Title.swift in Sources */,
 				F14F34EB2A675011001BF435 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

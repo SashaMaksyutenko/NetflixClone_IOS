@@ -6,10 +6,10 @@
 //
 
 import Foundation
-struct trendingMoviesResponse:Codable{
-    let results:[Movie]
+struct trendingTitleResponse:Codable{
+    let results:[Title]
 }
-struct Movie:Codable{
+struct Title:Codable{
     let id:Int
     let media_type:String
     let original_name:String?
