@@ -14,6 +14,12 @@ class SearchViewController: UIViewController {
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
         return table
     }()
+    private let searchController:UISearchController={
+        let controller=UISearchController(searchResultsController: SearchResultsViewController())
+        controller.searchBar.placeholder="search for a Movie or a Tv show"
+        controller.searchBar.searchBarStyle = .minimal
+        return controller
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -21,13 +27,15 @@ class SearchViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles=true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         view.addSubview(discoverTable)
+        discoverTable.delegate=self
+        discoverTable.dataSource=self
+        navigationItem.searchController=searchController
+        navigationController?.navigationBar.tintColor = .white
+        fetchDiscoverMovies()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         discoverTable.frame = view.bounds
-        discoverTable.delegate=self
-        discoverTable.dataSource=self
-        fetchDiscoverMovies()
     }
     private func fetchDiscoverMovies(){
         APICaller.shared.getDiscoverMovies { [weak self]result in
