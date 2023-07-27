@@ -24,8 +24,6 @@ class HomeViewController: UIViewController{
         configureNavBar()
         let headerView=HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView=headerView
-        //getTrendingMovies()
-        //fetchData()
     }
     private func configureNavBar()
     {
