@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class SearchViewController: UIViewController {
     private var titles:[Title]=[Title]()
     private let discoverTable:UITableView={
@@ -88,5 +87,4 @@ extension SearchViewController:UISearchResultsUpdating{
             }
         }
     }
-    
 }

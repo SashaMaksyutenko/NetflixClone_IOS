@@ -24,6 +24,7 @@ class HomeViewController: UIViewController{
         configureNavBar()
         let headerView=HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView=headerView
+        APICaller.shared.getMovie(with: "Harry Potter")
     }
     private func configureNavBar()
     {
