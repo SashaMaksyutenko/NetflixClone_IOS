@@ -150,7 +150,7 @@ class APICaller{
                 return
             }
             do {
-                let results = try JSONDecoder().decode(YuotubeSearchResponse.self, from: data)
+                let results = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
                 completion(.success(results.items[0]))
             } catch {
                 completion(.failure(error))
